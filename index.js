@@ -8,10 +8,10 @@ function map(sourceArr, callback) {
 }
 
 function reduce(sourceArr, callback, startingPoint = 0) {
-  let returnValue = (!!startingPoint) ? startingPoint : sourceArr[0]
-  let i = (!!startingPoint) ? 0 : 1
+  let returnValue = (!!startingPoint) ? startingPoint : sourceArr[0];
+  let i = (!!startingPoint) ? 0 : 1;
   for (; i < sourceArr.length; i++) {
-    returnValue = callback(sourceArr[i], returnValue)
+    returnValue = callback(sourceArr[i], returnValue);
   }
-  return returnValue
+  return returnValue;
 }
